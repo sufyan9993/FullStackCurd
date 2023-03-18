@@ -15,7 +15,7 @@ function Home() {
         setIsLoading(true)
         const { data } = await axios.get('http://localhost:8000/AllEmployees')
         setUsersData(data)
-        console.log(data);
+        // console.log(data);
         setIsLoading(false)
     }
 
