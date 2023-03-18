@@ -26,14 +26,13 @@ function AddUser() {
 
   const getUserDetails = async (id) => {
     const { data } = await axios.get(`http://localhost:8000/Employee/${id}`)
-
     setFormValues({
       Name: data.Name,
       Age: data.Age.toString(),
       Address: data.Address
     })
   }
-  useEffect(() => {
+  useEffect(() => { 
     params.id && getUserDetails(params.id)
   }, [])
   return (
