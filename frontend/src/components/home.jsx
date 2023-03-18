@@ -25,7 +25,7 @@ function Home() {
     }
     const DeleteUser = async () => {
         await axios.delete(`http://localhost:8000/DeleteEmployee/${userId}`)
-        // FetchUserData()
+        FetchUserData()
     }
     useEffect(() => {
         FetchUserData()

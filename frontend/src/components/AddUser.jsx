@@ -1,5 +1,5 @@
-import { AccountCircle, Money } from "@mui/icons-material"
-import { Button, FormControl, InputAdornment, InputLabel, MenuItem, Select, Stack, TextField, Typography } from "@mui/material"
+import { AccountCircle } from "@mui/icons-material"
+import { Button,  Stack, TextField, Typography } from "@mui/material"
 import { Box } from "@mui/system"
 import axios from "axios"
 import { useEffect, useState } from "react"
@@ -14,8 +14,6 @@ function AddUser() {
     Address: '',
   })
 
-
-
   const submitHandler = async (e) => {
     e.preventDefault()
     console.log('submitted', FormValues);
@@ -29,7 +27,7 @@ function AddUser() {
     setFormValues({
       Name: data.Name,
       Age: data.Age.toString(),
-      Address: data.Address
+      Address: data.Address,
     })
   }
   useEffect(() => { 
