@@ -24,4 +24,5 @@ App.use('/', empRoutes)
 
 App.listen(port, () => {
     console.log(`server Started at port http://localhost:${port}`)
+    
 })
